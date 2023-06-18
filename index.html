@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ducati</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    </head>
+    <body>
+
+        <!-- header start -->
+        <header>
+            <a href="#"><img src="img/ducati_logo.PNG" width="40px" alt="logo"></a>
+            <nav class="navbar">
+                <a href="#" class="active">home</a>
+                <a href="#about">about</a>
+                <a href="#bike">bike</a>
+                <a href="#team">team</a>
+                <a href="#order">order</a>
+                <a href="#news">news</a>
+            </nav>
+
+            <div class="icons">
+                <i class="ri-menu-line" id="menu"></i>
+                <i class="ri-search-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-user-3-line"></i>
+            </div>
+        </header>
+
+        <!-- header end -->
+
+        <!-- home start -->
+
+        <div class="home" id="home">
+            <div class="swiper slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide slide slide1">
+                        <div class="content">
+                            <h1>Ducati V4</h1>
+                            <p>The 2020 version of the Panigale V4 boosts
+                                performance even further and takes track riding
+                                to the next level for amateurs and pros alike. A
+                                series of refinements make for an easier, more
+                                user-friendly, less fatiguing ride while
+                                simultaneously making the bike faster not just
+                                on individual laps but over entire timed
+                                sessions. </p>
+                            <button class="btn">order now</button>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide slide2">
+                        <div class="content">
+                            <h1>Ducati V4</h1>
+                            <p>The 2020 version of the Panigale V4 boosts
+                                performance even further and takes track riding
+                                to the next level for amateurs and pros alike. A
+                                series of refinements make for an easier, more
+                                user-friendly, less fatiguing ride while
+                                simultaneously making the bike faster not just
+                                on individual laps but over entire timed
+                                sessions. </p>
+                            <button class="btn">order now</button>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide slide3">
+                        <div class="content">
+                            <h1>Ducati V4</h1>
+                            <p>The 2020 version of the Panigale V4 boosts
+                                performance even further and takes track riding
+                                to the next level for amateurs and pros alike. A
+                                series of refinements make for an easier, more
+                                user-friendly, less fatiguing ride while
+                                simultaneously making the bike faster not just
+                                on individual laps but over entire timed
+                                sessions. </p>
+                            <button class="btn">order now</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- home end -->
+
+        <!-- about start -->
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="image"><a href="#"><img src="img/about_img.jpg"
+                            alt="ceo" width="500px" height="400px"></a></div>
+                <div class="content">
+                    <h1>~ About Ducati ~</h1>
+                    <p>In 1926 Antonio Cavalieri Ducati and his three sons,
+                        Adriano, Marcello, and Bruno Cavalieri Ducati, founded
+                        Società Scientifica Radiobrevetti Ducati (SSR Ducati) in
+                        Bologna to produce vacuum tubes, condensers and other
+                        radio components. In 1935 they had become successful
+                        enough to enable construction of a new factory in the
+                        Borgo Panigale area of the city. Production was
+                        maintained during World War II, despite the Ducati
+                        factory being a repeated target of Allied bombing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- about end -->
+
+        <!-- Bike start -->
+
+        <section class="bike" id="bike">
+            <h1>Model</h1>
+            <div class="bike-list">
+                <div class="model">
+                    <img src="./img/bike1.jpg">
+                </div>
+                <div class="model">
+                    <img src="./img/bike2.jpg">
+                </div>
+                <div class="model">
+                    <img src="./img/bike3">
+                </div>
+                <div class="model">
+                    <img src="./img/bike4.jpg">
+                </div>
+                <div class="model">
+                    <img src="./img/bike5.jpg">
+                </div>
+                <div class="model">
+                    <img src="./img/bike6.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bike end -->
+
+        <!-- Team start -->
+
+        <section class="team" id="team">
+            <h1 class="heading"></h1>
+        </section>
+
+        <!-- Team end -->
+
+        <!-- Order start -->
+
+        <!-- Order end -->
+
+        <!-- News start -->
+
+        <!-- News end -->
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+    var swiper = new Swiper(".slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+        <script src="main.js"></script>
+    </body>
+</html>

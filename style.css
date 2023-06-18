@@ -420,6 +420,37 @@ header .icons #menu
 
 /* news end */
 
+/* footer start */
+footer
+{
+    background: #0e0707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+footer h1
+{
+    color: white;
+}
+footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li
+{
+    list-style: none;
+}
+footer ul li a
+{
+   font-size: 24px;
+   color: white;
+}
+
+   /* footer end */
+
  /* custom scroll bar */
  ::-webkit-scrollbar{
     width: 8px;

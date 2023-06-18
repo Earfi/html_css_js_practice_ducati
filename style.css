@@ -241,6 +241,185 @@ header .icons #menu
 }
 /* bike end */
 
+/* team start */
+.team
+{
+    margin: 20px 20px;
+}
+
+.team .heading
+{
+    font-size: 3rem;
+    text-align: center;
+}
+.team .team-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    width: 100%;
+    height: 50rem;
+    grid-gap: 1.5rem;
+    overflow: hidden;
+}
+.team .team-container .team-user
+{
+    position: relative;
+}
+.team .team-container .team-user::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    display: none;
+    top: 0;left: 0;right: 0;bottom: 0;
+}
+.team .team-container .team-user:hover.team-user::before
+{
+    display: block;
+}
+.team .team-container .team-user .image img
+{
+    width: 100%;
+}
+.team .team-container .team-user .info
+{
+    top: 100%;
+    position: absolute;
+    left: 0;right: 0;bottom: 0;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.team .team-container .team-user:hover .info
+{
+    top: 0;
+}
+.team .team-container .team-user .info h1
+{
+    font-size: 2.7rem;
+    color: white;
+    margin-top: 3rem;
+}
+.team .team-container .team-user .info ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+.team .team-container .team-user .info ul li a
+{
+    font-size: 1.7rem;
+    margin: 0 6px;
+    color: white;
+}
+
+/* team end */
+
+/* order start */
+.order
+{
+    /* margin: 40px 20px; */
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.order .image
+{
+    width: 55%;
+    background: url(./img/about_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 9rem;
+}
+.order .form
+{
+    background: #181818;
+    width: 45%;
+    padding: 9rem 7%;
+}
+.order .form h1
+{
+    color: white;
+}
+.order .form .form-select
+{
+    display: flex;
+    grid-gap: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+.order .form h1
+{
+    font-size: 3rem;
+}
+.order .form form .form-select input,
+.order .form form .form-select select
+{   
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    background: none;
+    border-bottom: .1rem solid #b7b3b3;
+    color: #b7b3b3;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.order .form form input::placeholder {
+    color: #b7b3b3;
+}
+/* order end */
+
+/* news start */
+.news
+{
+    margin: 40px;
+}
+.news h1
+{
+    text-align: center;
+    font-size: 3rem;
+}
+.new-list
+{
+    display: flex;
+    gap: 1.5rem;
+}
+.new-list .item
+{
+    text-align: center;
+    margin: 12px;
+    width: 33%;
+    background:#ffffff;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.new-list .item .image
+{
+    position: relative;
+    overflow: hidden;
+}
+.new-list .item .image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-list .item .image:hover img
+{
+    transform: scale(1.2);
+}
+
+/* news end */
+
  /* custom scroll bar */
  ::-webkit-scrollbar{
     width: 8px;
@@ -293,7 +472,14 @@ header .icons #menu
         margin: auto;
         margin-top: 10rem;
     }
-    
+    .order .image
+    {
+        width: 0%;
+    }
+    .order .form
+    {
+        width: 100%;
+    }
 }
 
 @media (max-width:800px)
@@ -310,6 +496,14 @@ header .icons #menu
         width: 100%;
     }
     .about-container .content
+    {
+        width: 100%;
+    }
+    .new-list
+    {
+        display: grid;
+    }
+    .new-list .item
     {
         width: 100%;
     }
